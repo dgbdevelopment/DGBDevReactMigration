@@ -1,0 +1,194 @@
+.hero {
+  width: 100%;
+}
+.hero-img {
+  position: relative;
+  background: url("../../assets/img/hero-background.jpg") no-repeat top
+    center/cover;
+  background-attachment: fixed;
+  height: calc(100vh - 4rem);
+}
+.Light .hero-img{
+  background: url("../../assets/img/Ciudad-de-dia.jpg") no-repeat top
+    center/cover;
+}
+.hero-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--hero-bg);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  flex-direction: row;
+  -webkit-box-align: center;
+  align-items: center;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  justify-content: space-between;
+}
+
+.hero-logo,
+.hero-card {
+  width: 100%;
+  height: 40%;
+  color: var(--text-color);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  flex-direction: column;
+  -webkit-box-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  justify-content: center;
+  @media screen and (width >= 768px) {
+    width: 45%;
+    height: 100%;
+  }
+}
+.hero-logo {
+  /* // background-color: red; */
+  @media screen and (width >= 768px) {
+    -webkit-box-align: end;
+    align-items: flex-end;
+  }
+}
+.hero-card {
+  /* background-color: blue; */
+  -webkit-box-pack: start;
+  justify-content: flex-start;
+  @media screen and (width >= 768px) {
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: start;
+    align-items: flex-start;
+    font-size: 1em;
+  }
+}
+.hero-title{
+  font-size: 2rem;
+}
+.hero-button {
+  text-decoration: none;
+  color: var(--text-color);
+  cursor: default;
+  /*padding: 0.5rem 0.75rem;
+  border: 2px solid var(--primary-color);  
+  position: absolute;
+  transform: translateY(6.5rem);
+  border-radius: 1rem;
+  margin-top: 2rem;    
+  &:hover {
+    border-bottom: 5px solid var(--primary-color);
+    border-right: 5px solid var(--primary-color);
+  } */
+  position: absolute; 
+  transform: translate(-0.5rem, 6.5rem);  
+  opacity: 0;
+  pointer-events: none;
+  transition: all 0.2s linear, opacity 1s ease-in;
+  &.show{
+    pointer-events: all;
+    opacity: 1;
+  }
+  & .arrow{
+    fill: transparent;
+    width: 14rem;
+    height: 4rem;
+    stroke: var(--primary-color);
+    stroke-width: 3px;
+    & path{
+      cursor: pointer;
+      transition: 0.25s ease-in;
+      &:hover{
+        /* stroke-width: 5px; */
+        filter: drop-shadow(0 0 3px var(--primary-color)) drop-shadow(0 0 5px #dadada);
+        /* fill: var(--primary-color); */
+      }
+    }    
+  }
+  & .arrow-text{
+    font-size: 0.9rem;
+    font-weight: bold;
+    position: absolute;
+    top: 1rem;
+    left: 7rem;
+    transform: translateX(-50%);
+    pointer-events: none;
+  }
+
+  @media screen and (width >= 768px) {
+    transform: translate(2rem, 6.5rem);
+  }
+}
+
+.typewritter.primary{
+  color: var(--primary-color);
+}
+.typewritter-prompt {
+  border-right: 1px solid var(--text-color);
+}
+
+.hero svg.logo {
+  width: 40vw;
+  max-width: 360px;
+  max-height: inherit;
+  fill: none;
+  stroke-width: 0.2px;
+  stroke: var(--text-color);
+  animation: filled ease-in-out 1s forwards 4.8s;
+  -webkit-animation: filled ease-in-out 1s forwards 4.8s;
+  /* @media screen and (width >= 768px) {
+    max-width: 30vw;
+  } */
+}
+
+path#path-animado {
+  -webkit-animation: vector 4.8s linear;
+  animation: vector 4.8s linear;
+  stroke-dasharray: 328px;
+}
+
+@-webkit-keyframes vector {
+  from {
+    stroke-dashoffset: 328px;
+  }
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@keyframes vector {
+  from {
+    stroke-dashoffset: 328px;
+  }
+  to {
+    stroke-dashoffset: 0px;
+  }
+}
+
+@-webkit-keyframes filled {
+  from {
+    fill: transparent;
+    stroke: var(--primary-color);
+  }
+  to {
+    fill: var(--primary-color);
+    stroke: none;
+  }
+}
+
+@keyframes filled {
+  from {
+    fill: transparent;
+    stroke: var(--primary-color);
+  }
+  to {
+    fill: var(--primary-color);
+    stroke: none;
+  }
+}

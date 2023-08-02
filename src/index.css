@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;900&display=swap');
+
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+
+:root {
+  font-family: "Inter", system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 500;
+  color-scheme: light dark;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;  
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+
+body{
+  min-width: 380px;
+  --title-font: "Montserrat", Helvetica, Arial;
+}
+
+body .Dark{
+  --primary-color: #00adb4;
+  --secondary-color: #00e0e0;
+  --bg-color: #15202b;
+  --button-bg: #006666;
+  --hero-bg: #00000090;
+  --neu-first-color: rgba(0, 0, 0, 0.9);
+  --neu-second-color: rgba(255, 255, 255, 0.2);
+  --danger-color: #ff3c32;
+  --cta-color: #fba905;
+  --light-gray: #a7a7a7;
+  --dark-color: #393d46;
+  --darken-color: #212832;
+  --bg-light: #eeeeee;
+  --text-color: #dadada;
+  --button-color: #eeeeee;
+  --text-grey: #4a4a4a;
+  --bg-gradient: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.1) 0%,
+    rgba(21, 32, 43, 1) 20%,
+    rgba(21, 32, 43, 1) 80%,
+    rgba(0, 0, 0, 0.1) 100%
+  )
+}
+
+body .Light{
+  --primary-color: #006666;
+  --secondary-color: #00c0c0;
+  --bg-color: #dadada;
+  --button-bg: #15202b;
+  --hero-bg: #dadadae0;
+  --neu-first-color: rgba(0, 0, 0, 0.2);
+  --neu-second-color: rgba(255, 255, 255, 0.9);
+  --danger-color: #ff3c32;
+  --cta-color: #fba905;
+  --light-gray: #a7a7a7;
+  --dark-color: #393d46;
+  --darken-color: #cfcfcf;
+  --bg-light: #eeeeee;
+  --text-color: #15202b;
+  --button-color: #eeeeee;
+  --text-grey: #4a4a4a;
+}
+
+.main {
+  padding: 4rem 0 0 0;
+}
+body .main{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  gap: 1rem;
+  width: 100%;
+  min-height: 100vh;
+  color: var(--text-color);
+  background: var(--bg-color);
+  transition: all 0.25s ease-in-out;
+}
+
+button{
+  color: var(--button-color);
+  background-color: var(--button-bg);
+  padding: 0.5rem 1rem;
+  border-radius: 1rem;
+  cursor: pointer;
+  border: none;
+  display: block;
+}
+
+.logo{
+  width: 50px;
+  fill: var(--text-color);
+}
+.primary{
+  color: var(--primary-color);
+}
+
+
+
