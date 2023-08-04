@@ -49,10 +49,10 @@ body .Dark{
   --text-grey: #4a4a4a;
   --bg-gradient: linear-gradient(
     90deg,
-    rgba(0, 0, 0, 0.1) 0%,
+    rgba(0, 0, 0, 0.3) 0%,
     rgba(21, 32, 43, 1) 20%,
     rgba(21, 32, 43, 1) 80%,
-    rgba(0, 0, 0, 0.1) 100%
+    rgba(0, 0, 0, 0.3) 100%
   )
 }
 
@@ -73,6 +73,13 @@ body .Light{
   --text-color: #15202b;
   --button-color: #eeeeee;
   --text-grey: #4a4a4a;
+  --bg-gradient: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.3) 0%,
+    #dadada 20%,
+    #dadada 80%,
+    rgba(0, 0, 0, 0.3) 100%
+  )
 }
 
 .main {
@@ -103,11 +110,66 @@ button{
 
 .logo{
   width: 50px;
+  max-height: 50px;
   fill: var(--text-color);
+}
+.text{
+  color: var(--text-color);
 }
 .primary{
   color: var(--primary-color);
 }
+.error{
+  color: var(--danger-color)
+}
+
+/********* NEUMORPHISM ************/
+.neu-text {
+  --pixels: 1px;
+  --first-color: var(--neu-first-color);
+  --second-color: var(--neu-second-color);
+  font-weight: 700;
+  text-shadow: var(--pixels) var(--pixels) calc(var(--pixels) + 2px) var(--first-color),
+    calc(var(--pixels) * -1) calc(var(--pixels) * -1) calc(var(--pixels) + 2px) var(--second-color);
+}
+
+.neu-border {
+  --pixels: 1px;
+  --border: none;
+  --first-color: var(--neu-first-color);
+  --second-color: var(--neu-second-color);
+  border: var(--border) solid var(--darken-color);
+  box-shadow: var(--pixels) var(--pixels) calc(var(--pixels) + 2px)
+      var(--first-color),
+    calc(var(--pixels) * -1) calc(var(--pixels) * -1) calc(var(--pixels) + 2px)
+      var(--second-color);
+}
+
+.neu-border-with-inset {
+  --pixels: 1px;
+  --border: 1px;
+  --first-color: var(--neu-first-color);
+  --second-color: var(--neu-second-color);
+  border: var(--border) solid var(--darken-color);
+
+  box-shadow: var(--pixels) var(--pixels) calc(var(--pixels) + 2px)
+      var(--first-color),
+    calc(var(--pixels) * -1) calc(var(--pixels) * -1) calc(var(--pixels) + 2px)
+      var(--second-color),
+    inset var(--pixels) var(--pixels) calc(var(--pixels) + 2px) var(--first-color),
+    inset calc(var(--pixels) * -1) calc(var(--pixels) * -1)
+      calc(var(--pixels) + 2px) var(--second-color);
+}
+
+.neu-inset-border{
+  --pixels: 1px;
+  --first-color: var(--neu-first-color);
+  --second-color: var(--neu-second-color);
+  box-shadow: inset var(--pixels) var(--pixels) calc(var(--pixels) + 2px) var(--first-color),
+    inset calc(var(--pixels) * -1) calc(var(--pixels) * -1) calc(var(--pixels) + 2px) var(--second-color);
+}
+
+/********** END OF NEUMORPHISM **********/
 
 
 

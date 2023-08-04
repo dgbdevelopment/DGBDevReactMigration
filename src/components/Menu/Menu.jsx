@@ -37,22 +37,22 @@ export function Menu() {
           <ul className={openMenu ? 'menu-open' : ''}>
             <li>
               {/* Usamos NavLink en lugar de Link */}
-              <NavLink to="/" className={({isActive}) => (isActive ? "active" : '')}>
+              <NavLink to="/" className={({isActive}) => (isActive ? "active" : '')} onClick={()=>setOpenMenu(false)}>
                 Inicio
               </NavLink>
             </li>
             <li>
-              <NavLink to="/portafolio" className={({isActive}) => (isActive ? "active" : '')}>
+              <NavLink to="/portafolio" className={({isActive}) => (isActive ? "active" : '')} onClick={()=>setOpenMenu(false)}>
                 Portafolio
               </NavLink>
             </li>
             <li>
-              <NavLink to="/blog" className={({isActive}) => (isActive ? "active" : '')}>
+              <NavLink to="/blog" className={({isActive}) => (isActive ? "active" : '')} onClick={()=>setOpenMenu(false)}>
                 Blog
               </NavLink>
             </li>
             <li>
-              <NavLink to="/contacto" className={({isActive}) => (isActive ? "active" : '')}>
+              <NavLink to="/contacto" className={({isActive}) => (isActive ? "active" : '')} onClick={()=>setOpenMenu(false)}>
                 Contacto
               </NavLink>
             </li>

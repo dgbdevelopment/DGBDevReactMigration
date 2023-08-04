@@ -1,0 +1,141 @@
+{
+  "projects": [
+    {
+      "links": [
+        "https://dgbdevelopment.com",
+        "https://github.com/dgbdevelopment/my-web-frontend",
+        "https://github.com/dgbdevelopment/my-web-backend"
+      ],
+      "_id": "5f7eca4dcf41f22bf8b21e6a",
+      "title": "Mi web personal",
+      "description": "Página web personal con portafolio. Los proyectos y artículos del blog se renderizan mediante peticiones al backend.",
+      "languages": "Frontend con webpack, sass y pug. Backend con nodejs, express, mongodb, passport, express-session, bcrypt, multer, method-override y connect flash.",
+      "image": "3f936c70-c47c-458e-abf1-379136206968.jpg",
+      "priority": 1,
+      "createdAt": "2020-10-08T08:14:05.474Z",
+      "updatedAt": "2020-10-08T08:14:05.474Z",
+      "__v": 0
+    },
+    {
+      "links": [
+        "https://chokauto.es",
+        "https://github.com/dgbdevelopment/Chok-Auto-Web",
+        "https://github.com/dgbdevelopment/mail-sender"
+      ],
+      "_id": "5f4ba6e2344c8247f860a090",
+      "title": "Web chokauto.es",
+      "description": "Diseño, desarrollo y redacción de textos para empresa dedicada a las reparaciones en el sector de la automoción.",
+      "languages": "Frontend en Angular 7 y un pequeño backend para tratar los mensajes de la sección de contacto.",
+      "image": "ce551499-ba16-4b2f-9f8f-14f8af30cce1.jpg",
+      "createdAt": "2020-08-30T13:17:22.570Z",
+      "updatedAt": "2020-10-05T10:26:50.064Z",
+      "__v": 0,
+      "priority": 10
+    },
+    {
+      "links": [
+        "https://asesoreslb.com",
+        "https://github.com/dgbdevelopment/asesoreslb"
+      ],
+      "_id": "5f4bf153676ec4119b64a122",
+      "title": "Landing page L&B Asesores",
+      "description": "Diseño y desarrollo para asesoría laboral, fiscal y contable.",
+      "languages": "Html, Css y Javascript. Sin librerías. Diseño simple a petición del cliente.",
+      "image": "ecef93c5-6f2f-491c-891f-893785f6e366.jpg",
+      "createdAt": "2020-08-30T18:34:59.651Z",
+      "updatedAt": "2020-10-05T10:27:03.146Z",
+      "__v": 0,
+      "priority": 20
+    },
+    {
+      "links": [
+        "https://gifs.dgbdevelopment.com/",
+        "https://github.com/dgbdevelopment/buscador-gifs.git"
+      ],
+      "_id": "5f7ae41201ff9b39823aad74",
+      "title": "Buscador de Gifs",
+      "description": "Buscador de Gifs animados con infinite scroll y masonry.",
+      "languages": "Proyecto con React",
+      "image": "8e1da3e4-ad52-4c51-bd12-87ea0971b1db.jpg",
+      "createdAt": "2020-10-05T09:14:58.823Z",
+      "updatedAt": "2020-10-06T18:58:55.482Z",
+      "__v": 0,
+      "priority": 30
+    },
+    {
+      "links": [
+        "https://product-hunt-similar-clone.netlify.app/",
+        "https://github.com/dgbdevelopment/product-hunt-clone"
+      ],
+      "_id": "5fae489dc1e1d02581901ffd",
+      "title": "Product Hunt Similar Clone",
+      "description": "Página similar a Product Hunt con registro de usuarios, votaciones, comentarios, búsquedas y ordenación.",
+      "languages": "Hecho con Nextjs y firebase para almacenar datos. ",
+      "image": "b5cc8a8d-1c87-4109-891f-177584470be7.jpg",
+      "priority": 40,
+      "createdAt": "2020-11-13T08:49:33.110Z",
+      "updatedAt": "2020-11-13T08:50:25.045Z",
+      "__v": 0
+    },
+    {
+      "links": [
+        "http://dgbdevelopment.com/simon",
+        "https://github.com/dgbdevelopment/simon"
+      ],
+      "_id": "5f4bf1f8676ec4119b64a123",
+      "title": "Simon",
+      "description": "Juego Simon. Repite la secuencia exacta de pulsaciones que marque la CPU. Prueba de memoria.",
+      "languages": "Código javascript puro sin librerías. Uso de webpack, sass y pug.",
+      "image": "392755fb-fc51-4178-81e6-cd28b7a78f13.jpg",
+      "createdAt": "2020-08-30T18:37:44.193Z",
+      "updatedAt": "2020-11-13T08:49:58.161Z",
+      "__v": 0,
+      "priority": 45
+    },
+    {
+      "links": [
+        "https://tareas.dgbdevelopment.com",
+        "https://github.com/dgbdevelopment/App-Tasks"
+      ],
+      "_id": "5f4bf328676ec4119b64a125",
+      "title": "Lista de tareas",
+      "description": "Aplicación de lista de tareas desarrollada en el backend. Con registro de usuarios y autentificación.",
+      "languages": "Con node, express, mongodb y vistas en handlebars. Librerías usadas: bcrypt, moment, passport, connect-flash y method-override.",
+      "image": "ecf274ee-5d59-4c2f-8c2d-b78c2671f031.jpg",
+      "createdAt": "2020-08-30T18:42:48.578Z",
+      "updatedAt": "2020-10-05T10:27:33.706Z",
+      "__v": 0,
+      "priority": 50
+    },
+    {
+      "links": [
+        "http://dgbdevelopment.com/tresenraya",
+        "https://github.com/dgbdevelopment/tresenraya"
+      ],
+      "_id": "5f4bf264676ec4119b64a124",
+      "title": "Tres en raya",
+      "description": "Juego tres en raya. El oponente es la CPU. Prueba el modo imposible.",
+      "languages": "Código javascript puro sin librerías. Uso de webpack, sass y pug.",
+      "image": "613e8ecb-124a-46fe-a37a-842bc2639373.jpg",
+      "createdAt": "2020-08-30T18:39:32.162Z",
+      "updatedAt": "2020-10-05T10:27:39.326Z",
+      "__v": 0,
+      "priority": 60
+    },
+    {
+      "links": [
+        "http://dgbdevelopment.com/mcdymcm",
+        "https://github.com/dgbdevelopment/mcdymcm"
+      ],
+      "_id": "5f4d478ae7c39e1958336dc1",
+      "title": "Calculadora de mcd y mcm",
+      "description": "Calcula online el máximo común divisor (mcd) y el mínimo común múltiplo (mcm) de varios números a la vez.",
+      "languages": "Código javascript puro sin librerías. Uso de webpack, sass y pug.",
+      "image": "f68535d3-d5de-4d51-86b2-07cc256e5ae0.jpg",
+      "createdAt": "2020-08-31T18:55:06.048Z",
+      "updatedAt": "2020-10-05T10:27:45.402Z",
+      "__v": 0,
+      "priority": 70
+    }
+  ]
+}
