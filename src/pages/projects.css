@@ -1,6 +1,7 @@
 .projects {
   position: relative;
-  background: var(--bg-gradient);
+  /* background: var(--bg-gradient); */
+  background: url("../assets/img/blog-bg-dark.svg") repeat-y top center/contain;
   width: 100%;
   min-height: calc(100vh - 4rem);
   padding-top: 3rem;
@@ -12,6 +13,20 @@
     border-radius: 100%;
     box-shadow: 0 0 3px #d8d8d8, 0 0 10px #d8d8d8;
   } */
+}
+.Light .projects{
+  background: url("../assets/img/blog-bg-light.svg") repeat-y top center/contain;
+}
+
+.projects:after{
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.8;
+  background: var(--bg-gradient);
 }
 .projects-title {
   position: relative;

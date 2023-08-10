@@ -3,17 +3,20 @@ import { Project } from "../components/Projects/Project";
 import "./projects.css";
 
 export function Projects() {
+  const [projects, setProjects] = useState(null);
 
-  const [projects, setProjects] = useState(null)
-  
   useEffect(() => {
     fetch("https://admin.dgbdevelopment.com/project/getall")
-    .then((response) => {
-      return response.json();
-    })
-    .then((data) => {
-      setProjects(data.projects);
-    })
+      .then((response) => {
+        if (!response.ok) throw new Error("Error en la petición");        
+        return response.json();
+      })
+      .then((data) => {
+        setProjects(data.projects);
+      })
+      .catch((err) => {
+        console.log(err);
+      });
   }, []);
 
   return (
@@ -21,7 +24,7 @@ export function Projects() {
       <h1 className="projects-title neu-text primary animated">Proyectos</h1>
       <div className="projects-container">
         {projects?.map((project) => (
-          <Project key={project._id} project={project}/>
+          <Project key={project._id} project={project} />
         ))}
       </div>
     </section>
