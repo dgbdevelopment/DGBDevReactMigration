@@ -60,9 +60,11 @@ export function Blog() {
             </div>
           </div>
           <div className="blog-articles">
+            <div className="title">
             <h1>Artículos publicados</h1>
             {query !== "" &&<p> Artículos que contienen &ldquo;{query}&rdquo;</p>}
             <hr />
+            </div>
             {articles.map((article) => (
               <div key={article._id} className="article-container">
                 <div className="article-top">
