@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import { Twitter, Github, Linkedin, Facebook, Stackoverflow, Devto } from "../assets/svg/logos";
+import { Twitter, Github, Linkedin, Facebook, Stackoverflow, Devto } from "../assets/logos";
 import "./contact.css";
 import { useState } from "react";
 
@@ -9,6 +9,7 @@ export function Contact() {
   const [resultMessage, setResultMessage] = useState({ message: "Deja tu mensaje", class: "text" });
 
   const sendMessage = (body) => {
+    setSending(true);
     fetch('https://admin.dgbdevelopment.com/mail', {
       method: "POST",
       body,
@@ -33,7 +34,6 @@ export function Contact() {
     if (email.trim() === '' || message.trim() === '') {
       return setResultMessage({ message: "Email y mensaje son campos obligatorios", class: "error" })
     }
-    setSending(true);
     setResultMessage({ message: "Enviando mensaje...", class: "text" })    
     const body = new URLSearchParams(fields)
     sendMessage(body);
@@ -52,7 +52,7 @@ export function Contact() {
   return (
     <section className="contact">
       <div className="img">
-        <img src="src/assets/img/contact.jpg" />
+        <img src="/assets/img/contact.jpg" />
       </div>
       <div className="form">
         <div className="form-title">
@@ -63,7 +63,7 @@ export function Contact() {
             {sending && <img
               className="loader"
               id="loader"
-              src="src/assets/img/loader.svg"
+              src="/assets/img/loader.svg"
             />}
             <span className={`result ${resultMessage.class}` }>
               {resultMessage.message}

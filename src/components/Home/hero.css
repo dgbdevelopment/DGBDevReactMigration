@@ -3,13 +3,13 @@
 }
 .hero-img {
   position: relative;
-  background: url("../../assets/img/hero-background.jpg") no-repeat top
+  background: url("/assets/img/hero-background.jpg") no-repeat top
     center/cover;
   background-attachment: fixed;
   height: calc(100vh - 4rem);
 }
 .Light .hero-img{
-  background: url("../../assets/img/Ciudad-de-dia.jpg") no-repeat top
+  background: url("/assets/img/Ciudad-de-dia.jpg") no-repeat top
     center/cover;
 }
 .hero-content {

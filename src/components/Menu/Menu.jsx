@@ -1,5 +1,5 @@
 import ThemeSwitch from "../ThemeSwitch/ThemeSwitch";
-import { Dgb } from "../../assets/svg/logos";
+import { Dgb } from "../../assets/logos";
 import { NavLink } from 'react-router-dom';
 import {Hamburger} from './Hamburger'
 

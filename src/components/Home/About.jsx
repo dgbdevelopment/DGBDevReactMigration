@@ -22,7 +22,7 @@ export function About() {
           <div className="card-content neu-inset-border">
             {logos[key].content.map(elem => (
               <div className="card-logos" key={elem.filename}>
-                <img className='logo-img' src={`src/assets/svg/skills/${elem.filename}`} alt={`Logo de ${elem.name}`} />
+                <img className='logo-img' src={`/assets/svg/skills/${elem.filename}`} alt={`Logo de ${elem.name}`} />
                 <p className="logo-text">{ elem.name }</p>
               </div>
             ))}

@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import "./hero.css";
-import { Dgb, DownArrow } from "../../assets/svg/logos";
+import { Dgb, DownArrow } from "../../assets/logos";
 
 export function Hero() {
 

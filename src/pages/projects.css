@@ -1,7 +1,7 @@
 .projects {
   position: relative;
   /* background: var(--bg-gradient); */
-  background: url("../assets/img/blog-bg-dark.svg") repeat-y top center/contain;
+  background: url("/assets/img/blog-bg-dark.svg") repeat-y top center/contain;
   width: 100%;
   min-height: calc(100vh - 4rem);
   padding-top: 3rem;
@@ -15,7 +15,7 @@
   } */
 }
 .Light .projects{
-  background: url("../assets/img/blog-bg-light.svg") repeat-y top center/contain;
+  background: url("/assets/img/blog-bg-light.svg") repeat-y top center/contain;
 }
 
 .projects:after{

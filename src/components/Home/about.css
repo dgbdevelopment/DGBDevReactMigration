@@ -126,7 +126,7 @@
 }
 
 .about-photo {
-  background: url("../../assets/img/photo.jpg") no-repeat center center/cover;
+  background: url("/assets/img/photo.jpg") no-repeat center center/cover;
   margin: 0.5rem auto;
   width: 33vw;
   height: 33vw;

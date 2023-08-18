@@ -1,7 +1,8 @@
-import { useState } from "react";
-import { articles as initialArticles } from "../mocks/articles.json";
+import { useState, useEffect } from "react";
+// import { articles as initialArticles } from "../mocks/articles.json";
 import "./blog.css";
 import { Link } from "react-router-dom";
+import { handleDate } from "../utils/date";
 
 export function Blog() {
   // "_id"
@@ -13,25 +14,45 @@ export function Blog() {
   // "createdAt"
   // "updatedAt"
 
-  const [articles, setArticles] = useState(initialArticles);
   const [query, setQuery] = useState("");
+  const [order, setOrder] = useState("ascending")  
+  const [articles, setArticles] = useState([]);
 
-  const handleDate = (d) => {
-    const date = new Date(d);
-    return `${date.getDate()} de ${date.toLocaleString("default", {
-      month: "long",
-    })} de ${date.getFullYear()}`;
-  };
+  useEffect(() => {
+    fetch(
+      `https://admin.dgbdevelopment.com/article/ordering/${order}/${query}`
+    )
+      .then((result) => result.json())
+      .then((data) => {
+        setArticles(data.articles);
+      })
+      .catch(() => {
+        console.log({ message: "Error al buscar en el servidor" });
+      });
+  }, [query, order])  
 
-  const handleSubmit = (e) => { 
+  const handleSubmitQuery = (e) => { 
     e.preventDefault();
-    setQuery(e.target.article_search.value)    
+    setQuery(e.target.article_search.value)
+  }  
+
+  const handleClickOrder = (e) => {
+    e.target.parentElement.parentElement.blur()
+    setOrder(e.target.getAttribute("data-order"));
+  }
+
+  const handleClean = () => {
+    setQuery("");
+    setOrder("ascending");
   }
 
   return (
     <section className="blog-container">
       {articles && (
         <>
+          {(query !== '' || order !== 'ascending') && 
+            <button className="clean-filters" onClick={handleClean}>Limpiar filtros</button>
+          }
           <div className="blog-navbar">
             <div className="blog-order">
               <div className="blog-select" tabIndex={0}>
@@ -40,15 +61,15 @@ export function Blog() {
                   <span>∨</span>
                 </div>
                 <div className="select-option">
-                  <span data-query={query}>Más recientes primero</span>
+                  <span data-order="descending" onClick={handleClickOrder}>Más recientes primero</span>
                 </div>
                 <div className="select-option">
-                  <span data-query={query}>Más antiguos primero</span>
+                  <span data-order="ascending"onClick={handleClickOrder} >Más antiguos primero</span>
                 </div>
               </div>
             </div>
             <div className="blog-search">
-              <form className="blog-form" autoComplete="off" onSubmit={handleSubmit} >
+              <form className="blog-form" autoComplete="off" onSubmit={handleSubmitQuery} >
                 <input
                   type="text"
                   name="article_search"
@@ -61,7 +82,7 @@ export function Blog() {
           </div>
           <div className="blog-articles">
             <div className="title">
-            <h1>Artículos publicados</h1>
+            <h1 className="neu-text">Artículos publicados</h1>
             {query !== "" &&<p> Artículos que contienen &ldquo;{query}&rdquo;</p>}
             <hr />
             </div>
@@ -101,26 +122,4 @@ export function Blog() {
   );
 }
 
-{
-  /* <div key={article._id} className="blog-article">
-                <div className="article-header">
-                  <div className="article-title">
-                    <h1>${article.title}</h1>
-                  </div>
-                  <div className="article-subtitle">
-                    <h2>${article.subtitle}</h2>
-                  </div>
-                </div>
-                <div className="article-date">
-                  {`${handleDate(article.createdAt)}`}
-                </div>
-                <div className="article-img">
-                  <img
-                    src={`https://admin.dgbdevelopment.com/assets/img/imguploads/${article.image}`}
-                    alt={`Imagen de cabecera de ${article.title}`}
-                  />
-                </div>
-                <div className="article-description">{article.description}</div>
-                <div className="article-content">{article.content}</div>
-              </div> */
-}
+

@@ -2,14 +2,14 @@
   position: relative;
   width: 100%;
   min-height: 100vh;
-  background: url("../../assets/img/more-background.jpg") no-repeat;
+  background: url("/assets/img/more-background.jpg") no-repeat;
     background-size: 100vh;
     background-position: top center;
     background-position-y: 2px ;
   top: 8vh;
   left: 0;
   @media screen and (width >= 1024px) {    
-      background: url("../../assets/img/more-background.jpg") no-repeat
+      background: url("/assets/img/more-background.jpg") no-repeat
         center center/cover;
       background-attachment: fixed;
       background-position-x: right;
@@ -24,22 +24,22 @@
   position: absolute;
   width: 100%;
   min-height: 100vh;
-  background: url("../../assets/img/more-border-mobile.png") no-repeat;
+  background: url("/assets/img/more-border-mobile.png") no-repeat;
   background-size: 100% 100vh;
 }
 
 .Light .more:before{
-  background: url("../../assets/img/more-border-mobile-light.png") no-repeat;
+  background: url("/assets/img/more-border-mobile-light.png") no-repeat;
   background-size: 100% 100vh;
 }
 @media screen and (width >= 1024px) {
   .more:before {
-    background: url("../../assets/img/more-border-desktop.png") no-repeat center
+    background: url("/assets/img/more-border-desktop.png") no-repeat center
       center/cover;
     background-size: cover;
   }
   .Light .more:before{
-    background: url("../../assets/img/more-border-desktop-light.png") no-repeat center
+    background: url("/assets/img/more-border-desktop-light.png") no-repeat center
       center/cover;
   }
 }
