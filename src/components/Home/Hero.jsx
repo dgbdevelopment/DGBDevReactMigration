@@ -54,7 +54,7 @@ export function Hero() {
             </h1>
             <h2 className="hero-text">
               <span
-                data-text="Desarrollador web frontend   "
+                data-text="Programador Web y Apps   "
                 className="typewritter"
               ></span>
             </h2>

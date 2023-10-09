@@ -1,7 +1,7 @@
 export const logos = {
   frontend: {
 
-    name: 'frontend',
+    name: 'desarrollo web',
     content:
     [
     { filename: "html.svg", name: "html" },
@@ -9,19 +9,20 @@ export const logos = {
     { filename: "javascript.svg", name: "javascript" },
     { filename: "angular.svg", name: "angular" },
     { filename: "react.svg", name: "react" },
-    { filename: "webpack.svg", name: "webpack" },
-    { filename: "gulp.svg", name: "gulp" },
-    { filename: "pug.svg", name: "pug" },
-    { filename: "sass.svg", name: "sass" },
+    //{ filename: "webpack.svg", name: "webpack" },
+    { filename: "nextjs.webp", name: "next-js" },
+    { filename: "nodejs.svg", name: "node js" },
+    { filename: "mongodb.svg", name: "mongo db" },
+    { filename: "mysql.svg", name: "mysql" },
   ]},
 
   backend: {
 
-    name: 'backend',
+    name: 'desarrollo apps',
     content: [
-      { filename: "nodejs.svg", name: "node js" },
-      { filename: "mongodb.svg", name: "mongo db" },
-      { filename: "mysql.svg", name: "mysql" },
+      { filename: "electron.svg", name: "electron" },
+      { filename: "react.svg", name: "react native" },
+      { filename: "net.svg", name: ".net" },
     ]
   },
 

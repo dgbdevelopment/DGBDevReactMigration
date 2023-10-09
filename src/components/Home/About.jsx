@@ -9,8 +9,11 @@ export function About() {
       <div className="about-me">
         <div className="about-photo neu-border-with-inset"></div>
         <div className="about-text">
-          <p>Desarrollador  web enfocado principalmente al Frontend con conocimientos suficientes de  Backend como para poder  crear mis propias aplicaciones.</p>
-          <p>He aprendido por mi cuenta siguiendo tutoriales y videos, haciendo cursos online, leyendo la documentación oficial y siguiendo consejos de otros desarrolladores más experimentados. Sin olvidar lo más importante: practicar, practicar y practicar.</p>
+          <p>Programador web full-stack y aplicaciones.</p>
+          <p>Muy pronto... Técnico Superior en Desarrollo de aplicaciones Web.</p>
+          <p>Mi pasión: programar.</p>
+          <p>Principalmente: autodidacta.</p>
+          <p>Me motiva: enfrentarme a nuevos retos de desarrollo, nuevos lenguajes de programación y nuevos frameworks que aprender.</p>
           <p>Aficionado al desarrollo de videojuegos.</p>
           <p>Lo mejor de la programación es que nunca terminas de aprender.</p>
         </div>
